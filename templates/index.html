@@ -3,13 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Existing Plot Example</title>
+    <title>Financial Article Sentiment Analysis</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #071A2D;
+            color: #0E3052;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #plot-container {
+            background-color: #34495e;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            border: 1px solid #2c3e50;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #github-link {
+            color: #BCC5CE;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        h1 {
+            color: #BCC5CE;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Flask Existing Plot Example</h1>
+    <div id="plot-container">
+        <h1 class="display-4">Financial Article Sentiment Analysis</h1>
 
-    <!-- Display the existing plot using an <img> tag -->
-    <img src="data:image/png;base64,{{ plot_data }}" alt="Existing Plot">
+        <!-- Display the existing plot using an <img> tag -->
+        <img src="data:image/png;base64,{{ plot_data }}" alt="Existing Plot" class="img-fluid">
+    </div>
 
+    <a href="https://github.com/yourusername/yourrepository" id="github-link" target="_blank">View on GitHub</a>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
